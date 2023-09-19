@@ -1,0 +1,216 @@
+* {
+    box-sizing: border-box;
+    font-size: 24px;
+    font-family: 'IBM Plex Serif', serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.sidebar ul {
+    margin: 0;
+    padding: 0;
+}
+
+.links a {
+    margin: auto 10px;
+}
+
+:root {
+    --color3: rgb(16, 27, 67);
+    --color4: rgb(16, 17, 27);
+}
+
+body {
+    background: linear-gradient(-90deg, var(--color3), var(--color4));
+    color: white;
+    min-height: 1px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    background-color: var(--color4);
+    z-index: 5;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1% 2%;
+}
+
+.front main {
+    width: fit-content;
+    height: 100%;
+}
+
+.sidebar li {
+    border-width: thin;
+    border-bottom: 1px solid #161e29;
+}
+
+.sidebar li:last-child {
+    border: 0px transparent none;
+}
+
+.sidebar {
+    background-color: var(--color4);
+    border-right: 1px solid #161e29;
+}
+
+.sidebar ul {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    height: 100%;
+}
+
+.sidebar li {
+    height: 100%;
+    width: 100%;
+}
+
+.sidebar a {
+    padding: 0 1rem;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+footer {
+  padding: 1%;
+  background: var(--color4);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+  width: 100%;
+}
+
+footer a {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 16px;
+}
+
+img {
+    border-radius: 32px;
+}
+
+.sidebar {
+    /* border: 1px solid white; */
+    /* width: fit-content; */
+    height: 100%;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.front {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+}
+
+span.content {
+    overflow-y: scroll;
+    margin: 1% 2%;
+}
+
+section {
+    margin: 2% 0;
+}
+
+section:first-child {
+    margin-top: 0;
+}
+
+section:last-child {
+    margin-bottom: 0;
+}
+
+section ul,p::first-letter {
+    margin-left: 2%;
+}
+
+table {
+    margin: 1% 10%;
+}
+
+table td, table th {
+    border: 1px solid white;
+}
+
+table td {
+    text-align: center;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 50%; */
+}
+
+code {
+    color: #000;
+    background-color: white;
+    font-family: Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;
+    /* white-space: pre; */
+    white-space: break-spaces;
+    line-height: 1.5;
+    tab-size: 4;
+    padding: 0 5%;
+    border-radius: 24px;
+    width: fit-content;
+}
+
+ /* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px gray;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: darkgray;
+    border-radius: 10px;
+}
+
+.current {
+    text-shadow: 1px 1px 10px green, 1px 1px 10px green;
+}

@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Default</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/css/html_style.css" type="text/css" media="screen" />
+</head>
+
+<body>
+    <div class="front">
+        <header>
+            <nav class="site-name">
+                <a href="/">TermaDev</a>
+            </nav>
+
+            <nav class="links">
+                <a href="/html.html">HTML</a>
+                <a href="/css.html" class="current">CSS</a>
+                <a href="/js.html">JS</a>
+            </nav>
+        </header>
+
+        <main class="content">
+            <span>
+                <nav class="sidebar">
+                    <ul>
+                        <li><a href="#intro">Introduciton</a></li>
+                        <li><a href="#selectors">Selectors</a></li>
+                        <li><a href="#selector-types">Types of Selectors</a></li>
+                        <li><a href="#colors">Colors</a></li>
+                        <li><a href="#flex-layout">Flex Layout</a></li>
+                        <li><a href="#grid-layout">Grid Layout</a></li>
+                    </ul>
+                </nav>
+            </span>
+
+            <span class="content">
+                <h1>Cascading Style Sheets (CSS)</h1>
+
+                <section id="intro">
+                    <h2>Introduction</h2>
+
+                    <p>
+                        Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a
+                        document written in
+                        HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements
+                        should be rendered on
+                        screen, on paper, in speech, or on other media.
+                    </p>
+
+                    <article>
+                        <h3>What is CSS?</h3>
+                        <p>
+                            CSS (Cascading Style Sheets) allows you to create great-looking web pages, but how does it
+                            work
+                            under the hood? This
+                            article explains what CSS is with a simple syntax example and also covers some key terms
+                            about
+                            the language.
+                        </p>
+                    </article>
+                </section>
+
+                <section id="selectors">
+                    <h2>CSS Selectors</h2>
+
+                    <p>
+                        A CSS selector is the first part of a CSS Rule. It is a pattern of elements and other terms that
+                        tell the browser
+                        which HTML elements should be selected to have the CSS property values inside the rule applied
+                        to them. The element
+                        or elements which are selected by the selector are referred to as the subject of the selector.
+                    </p>
+
+                    <img src="resources/img/selector.png" class="center">
+
+                    <article>
+                        <h3>Selector list</h3>
+
+                        <p>
+                            If you have more than one thing which uses the same CSS then the individual selectors can be
+                            combined into a
+                            selector list so that the rule is applied to all of the individual selectors. For example,
+                            if I
+                            have the same CSS
+                            for an h1 and also a class of .special, I could write this as two separate rules.
+                        </p>
+
+                        <code class="center">
+h1 {
+    color: blue;
+}
+
+.special {
+    color: blue;
+}
+                    </code>
+
+                        <p>
+                            I could also combine these into a selector list, by adding a comma between them.
+                        </p>
+
+                        <code class="center">
+h1, .special {
+    color: blue;
+}
+                    </code>
+
+                        <p>
+                            White space is valid before or after the comma. You may also find the selectors more
+                            readable if
+                            each is on a new
+                            line.
+                        </p>
+
+                        <code class="center">
+h1,
+.special {
+    color: blue;
+}
+                        </code>
+                    </article>
+                </section>
+
+                <section id="selector-types">
+                    <h2>Types of Selectors</h2>
+
+                    <p>
+                        There are a few different groupings of selectors, and knowing which type of selector you might
+                        need will help you to
+                        find the right tool for the job. In this article's subarticles we will look at the different
+                        groups of selectors in
+                        more detail.
+                    </p>
+
+                    <article>
+                        <h3>Type, class, and ID selectors</h3>
+
+                        <p>
+                            This group includes selectors that target an HTML element such as an &lt;h1&gt;.
+                        </p>
+
+                        <code class="center">
+h1 {
+}
+                    </code>
+
+                        <p>
+                            It also includes selectors which target a class:
+                        </p>
+
+                        <code class="center">
+.box {
+}
+                    </code>
+
+                        <p>
+                            or, an ID:
+                        </p>
+
+                        <code class="center">
+#unique {
+}
+                    </code>
+                    </article>
+
+                    <article>
+                        <h3>Attribute selectors</h3>
+
+                        <p>
+                            This group of selectors gives you different ways to select elements based on the presence of
+                            a certain attribute on
+                            an element:
+                        </p>
+
+                        <code class="center">
+a[title] {
+}
+                        </code>
+
+                        <p>
+                            Or even make a selection based on the presence of an attribute with a particular value:
+                        </p>
+
+                        <code class="center">
+a[href="https://example.com"] {
+}
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>Pseudo-classes and pseudo-elements</h3>
+
+                        <p>
+                            This group of selectors includes pseudo-classes, which style certain states of an element.
+                            The :hover pseudo-class
+                            for example selects an element only when it is being hovered over by the mouse pointer:
+                        </p>
+
+                        <code class="center">
+a:hover {
+}
+                        </code>
+
+                        <p>
+                            It also includes pseudo-elements, which select a certain part of an element rather than the
+                            element itself. For
+                            example, ::first-line always selects the first line of text inside an element (a
+                            &lt;p&gt; in the below case), acting as if a &lt;span&gt; was wrapped around the first
+                            formatted line and then selected.
+                        </p>
+
+                        <code class="center">
+p::first-line {
+}
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>Combinators</h3>
+
+                        <p>
+                            The final group of selectors combine other selectors in order to target elements within our
+                            documents. The
+                            following, for example, selects paragraphs that are direct children of
+                            &lt;article&gt; elements using the child combinator (&gt;):
+                        </p>
+
+                        <code class="center">
+article > p {
+}
+                        </code>
+                    </article>
+                </section>
+
+                <section id="colors">
+                    <h2>CSS Colors</h2>
+
+                    <article>
+                        <h3>Color Name Keywords</h3>
+
+                        <p>
+                            Color name keywords can be used to set color property values for elements in CSS.
+                        </p>
+
+                        <code class="center">
+h1 {
+    color: aqua;
+}
+
+li {
+    color: khaki;
+}
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>CSS Color Alpha Values</h3>
+
+                        <p>
+                            Alpha values determine the transparency of colors in CSS. Alpha values can be set for both
+                            RGB and HSL colors by
+                            using rgba() and hsla() and providing a fourth value representing alpha. Alpha values can
+                            range between 0.0 (totally
+                            transparent) and 1.0 (totally opaque).
+                        </p>
+
+                        <p>
+                            The CSS transparent value can also be used to create a fully transparent element.
+                        </p>
+
+                        <code class="center">
+.midground {
+  background-color: rgba(0, 255, 0, 0.5);
+}
+
+.foreground {
+  background-color: hsla(34, 100%, 50%, 0.1);
+}
+
+.transparent {
+  color: transparent;
+}
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>CSS Hexadecimal Colors</h3>
+
+                        <p>
+                            CSS colors can be represented in hexadecimal (or hex) notation. Hexadecimal digits can
+                            represent sixteen different
+                            values using 0-9 and a-f.
+                        </p>
+
+                        <p>
+                            Hexadecimal colors are composed of 6 characters–each group of two represents a value between
+                            0 and 255 for red,
+                            green, or blue. For example #ff0000 is all red, no green, and no blue.
+                        </p>
+
+                        <p>
+                            When both characters of all three colors are repeated, hex colors can be abbreviated to only
+                            three values, so
+                            #0000ff could also be represented as #00f.
+                        </p>
+
+                        <code class="center">
+.red {
+  color: #ff0000;
+}
+
+.short-blue {
+  color: #00f;
+}
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>CSS HSL Colors</h3>
+
+                        <p>
+                            CSS colors can be declared with the HSL color system using hsl() syntax. This syntax
+                            contains three values: hue (the
+                            color value itself), saturation (intensity), and lightness.
+                        </p>
+
+                        <p>
+                            Hue values range from 0 to 360 while saturation and lightness values are represented as
+                            percentages.
+                        </p>
+
+                        <code class="center">
+.light-blue {
+  background-color: hsl(200, 70%, 50%);
+}
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>CSS rgb() Colors</h3>
+
+                        <p>
+                            CSS colors can be declared with RGB colors using rgb() syntax.
+                        </p>
+
+                        <p>
+                            rgb() should be supplied with three values representing red, green, and blue. These values
+                            range can from 0 to 255.
+                        </p>
+
+                        <code class="center">
+.hot-pink {
+  color: rgb(249, 2, 171);
+}
+
+.green {
+  color: rgb(0, 255, 0);
+}
+                        </code>
+                    </article>
+                </section>
+
+                <section id="flex-layout">
+                    <h2>Flexbox Layout</h2>
+
+                    <p>
+                        The CSS display: flex property sets an HTML element as a block level flex container which takes
+                        the full width of
+                        its parent container. Any child elements that reside within the flex container are called flex
+                        items.
+                    </p>
+
+                    <p>
+                        Flex items change their size and location in response to the size and position of their parent
+                        container.
+                    </p>
+
+                    <code class="center">
+div {
+  display: flex;
+}
+                    </code>
+
+                    <article>
+                        <h3>justify-content Property</h3>
+
+                        <p>
+                            The CSS justify-content flexbox property defines how the browser distributes space between
+                            and around content items
+                            along the main-axis of their container. This is when the content items do not use all
+                            available space on the
+                            major-axis (horizontally).
+                        </p>
+
+                        <p>
+                            justify-content can have the values of:
+                        </p>
+
+                        <ul>
+                            <li>flex-start</li>
+                            <li>flex-end</li>
+                            <li>center</li>
+                            <li>space-between</li>
+                            <li>space-around</li>
+                        </ul>
+                    </article>
+
+                    <article>
+                        <h3>flex Property</h3>
+
+                        <p>
+                            The flex CSS property specifies how a flex item will grow or shrink so as to fit within the
+                            space available in its
+                            flex container. This is a shorthand property that declares the following properties in order
+                            on a single line:
+                        </p>
+
+                        <ul>
+                            <li>flex-grow</li>
+                            <li>flex-shrink</li>
+                            <li>flex-basis</li>
+                        </ul>
+
+                        <code class="center">
+/* Three properties declared on three lines: */
+.first-flex-item {
+  flex-grow: 2;
+  flex-shrink: 1;
+  flex-basis: 150px;
+}
+
+/* Same three properties declared on one line: */
+.first-flex-item {
+  flex: 2 1 150px;
+}
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>flex-direction Property</h3>
+
+                        <p>
+                            The flex-direction CSS property specifies how flex items are placed in the flex container -
+                            either vertically or
+                            horizontally. This property also determines whether those flex items appear in order or in
+                            reverse order.
+                        </p>
+
+                        <code class="center">
+div {
+  display: flex;
+  flex-direction: row-reverse;
+}
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>align-content Property</h3>
+
+                        <p>
+                            The align-content property modifies the behavior of the flex-wrap property. It determines
+                            how to space rows from top
+                            to bottom (ie. along the cross axis). Multiple rows of items are needed for this property to
+                            take effect.
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3>flex-grow Property</h3>
+
+                        <p>
+                            The CSS flex-grow property allows flex items to grow as the parent container increases in
+                            size horizontally. This
+                            property accepts numerical values and specifies how an element should grow relative to its
+                            sibling elements based on
+                            this value.
+                        </p>
+
+                        <p>
+                            The default value for this property is 0.
+                        </p>
+
+                        <code class="center">
+.panelA {
+  width: 100px;
+  flex-grow: 1;
+}
+
+/* This panelB element will stretch twice wider than the panelA element */
+.panelB {
+  width: 100px;
+  flex-grow: 2;
+}
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>flex-shrink Property</h3>
+
+                        <p>
+                            The CSS flex-shrink property determines how an element should shrink as the parent container
+                            decreases in size
+                            horizontally. This property accepts a numerical value which specifies the ratios for the
+                            shrinkage of a flex item
+                            compared to its other sibling elements within its parent container.
+                        </p>
+
+                        <p>
+                            The default value for this property is 1.
+                        </p>
+
+                        <code class="center">
+.container {
+  display: flex;
+}
+
+.item-a {
+  flex-shrink: 1;
+  /* The value 1 indicates that the item should shrink. */
+}
+
+.item-b {
+  flex-shrink: 2;
+  /* The value 2 indicates that the item should shrink twice than the element item-a. */
+}
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>Css flex-basis property</h3>
+
+                        <p>
+                            The flex-basis CSS property sets the initial base size for a flex item before any other
+                            space is distributed
+                            according to other flex properties.
+                        </p>
+
+                        <code class="center">
+// Default Syntax
+flex-basis: auto;
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>The CSS flex-flow property</h3>
+
+                        <p>
+                            The CSS property flex-flow provides a shorthand for the properties flex-direction and
+                            flex-wrap. The value of the
+                            flex-direction property specifies the direction of the flex items and the value of the
+                            flex-wrap property allows
+                            flex items to move to the next line instead of shrinking to fit inside the flex container.
+                            The flex-flow property
+                            should be declared on the flex container.
+                        </p>
+
+                        <code class="center">
+// In this example code block, "column" is the value of the property "flex-direction" and "wrap" is the value of the property "flex-wrap".
+.container {
+  display: flex;
+  flex-flow: column wrap;
+}
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>CSS display: inline-flex property</h3>
+
+                        <p>
+                            The CSS display: inline-flex property sets an HTML element as an inline flex container which
+                            takes only the required
+                            space for the content. Any child elements that reside within the flex container are called
+                            flex items. Flex items
+                            change their size and location in response to the size and position of their parent
+                            container.
+                        </p>
+
+                        <code class="center">
+.container{
+  display: inline-flex;
+}
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>Flexbox Properties align-items</h3>
+
+                        <p>
+                            When working with CSS flexbox align-items is used to align flex items vertically within a
+                            parent container.
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3>Css flex-wrap property</h3>
+
+                        <p>
+                            The flex-wrap property specifies whether flex items should wrap or not. This applies to flex
+                            items only. Once you
+                            tell your container to flex-wrap, wrapping become a priority over shrinking. Flex items will
+                            only begin to wrap if
+                            their combined flex-basis value is greater than the current size of their flex container.
+                        </p>
+
+                        <code class="center">
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
+}
+                        </code>
+                    </article>
+
+                </section>
+
+                <section id="grid-layout">
+                    <h2>Grid Layout</h2>
+
+                    <article>
+                        <h3>Grid Template Columns</h3>
+
+                        <p>
+                            To specify the number of columns of the grid and the widths of each column, the CSS property
+                            grid-template-columns
+                            is used on the grid container. The number of width values determines the number of columns
+                            and each width value can
+                            be either in pixels(px) or percentages(%).
+                        </p>
+
+                        <code class="center">
+#grid-container {
+  display: grid;
+  width: 100px;
+  grid-template-columns: 20px 20% 60%;
+}
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>fr Relative Unit</h3>
+
+                        <p>
+                            The CSS grid relative sizing unit fr is used to split rows and/or columns into proportional
+                            distances. Each fr unit
+                            is a fraction of the grid’s overall length and width. If a fixed unit is used along with fr
+                            (like pixels for
+                            example), then the fr units will only be proportional to the distance left over.
+                        </p>
+
+                        <code class="center">
+/*
+In this example, the second column take 60px of the avaiable 100px so the first and third columns split the remaining available 40px into two parts (`1fr` = 50% or 20px)
+*/
+
+.grid {
+  display: grid;
+  width: 100px;
+  grid-template-columns: 1fr 60px 1fr;
+}
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>Grid Gap</h3>
+
+                        <p>
+                            The CSS grid-gap property is a shorthand way of setting the two properties grid-row-gap and
+                            grid-column-gap. It is
+                            used to determine the size of the gap between each row and each column. The first value sets
+                            the size of the gap
+                            between rows and while the second value sets the size of the gap between columns.
+                        </p>
+
+                        <code class="center">
+// The distance between rows is 20px
+// The distance between columns is 10px
+
+#grid-container {
+  display: grid;
+  grid-gap: 20px 10px;
+}
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>CSS Block Level Grid</h3>
+
+                        <p>
+                            CSS Grid is a two-dimensional CSS layout system. To set an HTML element into a block-level
+                            grid container use
+                            display: grid property/value. The nested elements inside this element are called grid items.
+                        </p>
+
+                        <code class="center">
+#grid-container {
+  display: grid;
+}
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>CSS grid-row</h3>
+
+                        <p>
+                            The CSS grid-row property is shorthand for the grid-row-start and grid-row-end properties
+                            specifying a grid item’s
+                            size and location within the grid row. The starting and ending row values are separated by a
+                            /. There is a
+                            corresponding grid-column property shorthand that implements the same behavior for columns.
+                        </p>
+
+                        <code class="center">
+/*CSS Syntax */
+grid-row: grid-row-start / grid-row-end;
+
+/*Example*/
+.item {
+  grid-row: 1 / span 2;
+}
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>CSS Inline Level Grid</h3>
+
+                        <p>
+                            CSS Grid is a two-dimensional CSS layout system. To set an HTML element into a inline-level
+                            grid container use
+                            display: inline-grid property/value. The nested elements inside this element are called grid
+                            items.
+                        </p>
+
+                        <p>
+                            The difference between the values inline-grid and grid is that the inline-grid will make the
+                            element inline while
+                            grid will make it a block-level element.
+
+                        </p>
+
+                        <code class="center">
+#grid-container {
+  display: inline-grid;
+}
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>minmax() Function</h3>
+
+                        <p>
+                            The CSS Grid minmax() function accepts two parameters:
+                        </p>
+
+                        <ul>
+                            <li>The first parameter is the minimum size of a row or column.</li>
+                            <li>The second parameter is the maximum size.</li>
+                        </ul>
+
+                        <p>
+                            The grid must have a variable width for the minmax() function.
+                        </p>
+
+                        <p>
+                            If the maximum value is less than the minimum, then the maximum value is ignored and only
+                            the minimum value is used.
+                        </p>
+
+                        <p>
+                            The function can be used in the values of the grid-template-rows, grid-template-columns and
+                            grid-template properties.
+                        </p>
+
+                        <code class="center">
+/* In this example, the second column will vary in size between 100px and 500px depending on the size of the web browser" */
+
+.grid {
+  display: grid;
+  grid-template-columns: 100px minmax(100px, 500px) 100px;
+}
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>grid-row-start & grid-row-end</h3>
+
+                        <p>
+                            The CSS grid-row-start and grid-row-end properties allow single grid items to take up
+                            multiple rows. The
+                            grid-row-start property defines on which row-line the item will start. The grid-row-end
+                            property defines how many
+                            rows an item will span, or on which row-line the item will end. The keyword span can be used
+                            with either property to
+                            automatically calculate the ending value from the starting value or vice versa. There are
+                            complementary
+                            grid-column-start and grid-column-end properties that apply the same behavior to columns.
+                        </p>
+
+                        <code class="center">
+/* CSS syntax:
+grid-row-start: auto|row-line;
+grid-row-end: auto|row-line|span n;
+*/
+grid-row-start: 2;
+grid-row-end: span 2;
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>CSS grid-row-gap</h3>
+
+                        <p>
+                            The CSS grid-row-gap property determines the amount of blank space between each row in a CSS
+                            grid layout or in other
+                            words, sets the size of the gap (gutter) between an element’s grid rows. The grid-column-gap
+                            provides the same
+                            functionality for space between grid columns.
+                        </p>
+
+                        <code class="center">
+/*CSS Syntax */
+grid-row-gap: length;
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>CSS grid-area</h3>
+
+                        <p>
+                            The CSS grid-area property specifies a grid item’s size and location in a grid layout and is
+                            a shorthand property
+                            for the grid-row-start, grid-column-start, grid-row-end, and grid-column-end in that order.
+                            Each value is separated
+                            by a /.
+                        </p>
+
+                        <p>
+                            In the included example, Item1 will start on row 2 and column 1, and span 2 rows and 3
+                            columns
+                        </p>
+
+                        <code class="center">
+.item1 {
+  grid-area: 2 / 1 / span 2 / span 3;
+}
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>Justify Items</h3>
+
+                        <p>
+                            The justify-items property is used on a grid container. It’s used to determine how the grid
+                            items are spread out
+                            along a row by setting the default justify-self property for all child boxes.
+                        </p>
+
+                        <ul>
+                            <li>The value start aligns grid items to the left side of the grid area.</li>
+                            <li>The value end aligns grid items to the right side of the grid area.</li>
+                            <li>The value center aligns grid items to the center of the grid area.</li>
+                            <li>The value stretch stretches all items to fill the grid area.</li>
+                        </ul>
+
+                        <code class="center">
+#container {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>Align Self</h3>
+
+                        <p>
+                            The CSS align-self property is used to set how an individual grid item positions itself
+                            along the column or block
+                            axis. By default grid items inherit the value of the align-items property on the container.
+                            So if the align-self
+                            value is set, it would over-ride the inherited align-items value.
+                        </p>
+
+                        <ul>
+                            <li>The value start positions grid items on the top of the grid area.</li>
+                            <li>The value end aligns the grid on the bottom of the grid area.</li>
+                            <li>The value center positions grid items on the center of the grid area.</li>
+                            <li>The value stretch positions grid items to fill the grid area (default).</li>
+                        </ul>
+                    </article>
+
+                    <article>
+                        <h3>CSS grid-template-areas</h3>
+
+                        <p>
+                            The CSS grid-template-areas property allows the naming of sections of a webpage to use as
+                            values in the
+                            grid-row-start, grid-row-end, grid-column-start, grid-column-end, and grid-area properties.
+                            They specify named grid
+                            areas within a CSS grid.
+                        </p>
+
+                        <code class="center">
+/* Specify two rows, where "item" spans the first two columns in the first two rows (in a four column grid layout)*/
+.item {
+  grid-area: nav;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'nav nav . .'
+    'nav nav . .';
+}
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>CSS grid-auto-flow</h3>
+
+                        <p>
+                            The CSS grid-auto-flow property specifies whether implicity-added elements should be added
+                            as rows or columns within
+                            a grid or, in other words, it controls how auto-placed items get inserted in the grid and
+                            this property is declared
+                            on the grid container.
+                        </p>
+
+                        <p>
+                            The value row specifies the new elements should fill rows from left to right and create new
+                            rows when there are too
+                            many elements (default).
+                        </p>
+
+                        <p>
+                            The value column specifies the new elements should fill columns from top to bottom and
+                            create new columns when there
+                            are too many elements.
+                        </p>
+
+                        <p>
+                            The value dense invokes an algorithm that attempts to fill holes earlier in the grid layout
+                            if smaller elements are
+                            added.
+                        </p>
+
+                        <code class="center">
+/*CSS Syntax */
+grid-auto-flow: row|column|dense|row dense|column dense;
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>Justify Content</h3>
+
+                        <p>
+                            Sometimes the total size of the grid items can be smaller than the grid container. If this
+                            is the case, the CSS
+                            property justify-content can be used to position the entire grid along the row or inline
+                            axis of the grid container.
+                        </p>
+
+                        <ul>
+                            <li>The value start aligns the grid to the left side of the grid container.</li>
+                            <li>The value end aligns the grid to the right side of the grid container.</li>
+                            <li>The value center centers the grid horizontally in the grid container.</li>
+                            <li>The value stretch stretches the grid items to increase the size of the grid to expand
+                                horizontally across the
+                                container.</li>
+                            <li>The value space-around includes an equal amount of space on each side of a grid element,
+                                resulting in double the
+                                amount of space between elements as there is before the first and after the last
+                                element.</li>
+                            <li>The value space-between includes an equal amount of space between grid items and no
+                                space at
+                                either end.</li>
+                            <li>The value space-evenly places an even amount of space between grid items and at either
+                                end.</li>
+                        </ul>
+                    </article>
+
+                    <article>
+                        <h3>Align Content</h3>
+
+                        <p>
+                            Some times the total size of the grid items can be smaller than the grid container. If this
+                            is the case, the CSS
+                            property align-content can be used to position the entire grid along the column axis of the
+                            grid container.
+                        </p>
+
+                        <ul>
+                            <li>The property is declared on the grid container.</li>
+                            <li>The value start aligns the grid to the top of the grid container.</li>
+                            <li>The value end aligns the grid to the bottom of the grid container.</li>
+                            <li>The value center centers the grid vertically in the grid container.</li>
+                            <li>The value stretch stretches the grid items to increase the size of the grid to expand
+                                vertically across the
+                                container.</li>
+                            <li>The value space-around includes an equal amount of space on each side of a grid element,
+                                resulting in double the
+                                amount of space between elements as there is before the first and after the last
+                                element.</li>
+                            <li>The value space-between includes an equal amount of space between grid items and no
+                                space at
+                                either end.</li>
+                            <li>The value space-evenly places an even amount of space between grid items and at either
+                                end.</li>
+                        </ul>
+                    </article>
+
+                    <article>
+                        <h3>CSS grid-auto-rows</h3>
+
+                        <p>
+                            The CSS grid-auto-rows property specifies the height of implicitly added grid rows or it
+                            sets a size for the rows in
+                            a grid container. This property is declared on the grid container. grid-auto-columns
+                            provides the same functionality
+                            for columns. Implicitly-added rows or columns occur when there are more grid items than
+                            cells available.
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3>Justify Self</h3>
+
+                        <p>
+                            The CSS justify-self property is used to set how an individual grid item positions itself
+                            along the row or inline
+                            axis. By default grid items inherit the value of the justify-items property on the
+                            container. So if the justify-self
+                            value is set, it would over-ride the inherited justify-items value.
+                        </p>
+
+                        <ul>
+                            <li>The value start positions grid items on the left side of the grid area.</li>
+                            <li>The value end positions the grid items on the right side of the grid area.</li>
+                            <li>The value center positions grid items on the center of the grid area.</li>
+                            <li>The value stretch positions grid items to fill the grid area (default).</li>
+                        </ul>
+
+                        <code class="center">
+// The grid items are positioned to the right (end) of the row.
+
+#grid-container {
+  display: grid;
+  justify-items: start;
+}
+
+.grid-items {
+  justify-self: end;
+}
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>CSS grid-area</h3>
+
+                        <p>
+                            The CSS grid-area property allows for elements to overlap each other by using the z-index
+                            property on a particular
+                            element which tells the browser to render that element on top of the other elements.
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3>Align Items</h3>
+
+                        <p>
+                            The align-items property is used on a grid container. It’s used to determine how the grid
+                            items are spread out along
+                            the column by setting the default align-self property for all child grid items.
+                        </p>
+
+                        <ul>
+                            <li>The value start aligns grid items to the top side of the grid area.</li>
+                            <li>The value end aligns grid items to the bottom side of the grid area.</li>
+                            <li>The value center aligns grid items to the center of the grid area.</li>
+                            <li>The value stretch stretches all items to fill the grid area.</li>
+                        </ul>
+
+                        <code class="center">
+#container {
+  display: grid;
+  align-items: start;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+                        </code>
+                    </article>
+                </section>
+            </span>
+        </main>
+        <footer><span><a href="https://notabug.org/anton.puiu" target="_blank"><svg width="62px" height="62px"
+                        viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                        <style>
+                            .st0 {
+                                fill: #fff
+                            }
+                        </style>
+                        <g id="Icon">
+                            <circle id="Background" cx="512" cy="512" r="512" />
+                            <path class="st0"
+                                d="M560 256c.6-1.8 2.5-3.2 4.4-2.8 1.5.4 2.1 2 2.4 3.4 5.2 23.2 7 47.3 3.8 71-1.7-11.1-3.4-22.1-5-33.2-.6-7.8-2.5-15.5-3.6-23.2-5.4 21.1-12.1 42.2-23.9 60.7-1.2 2.1-2.9 3.9-3.3 6.3-3.5 42.9-7 85.8-10.5 128.8 8.9 4 16.1 11.3 19.7 20.4 27.8-29.3 54-60.3 76.1-94 50.8-9.7 96.9-33.8 144.4-53.1 13.6 13.2 26.9 26.8 39.2 41.2 3.9 4.9 8.3 9.5 10.7 15.4-17.2-16.1-34.2-32.6-51.4-48.8-32.6 12.9-61.7 33.3-94.4 46-11.6 4.6-23.7 7.9-35.9 10.4-2.3.7-5.3.5-6.7 2.9-6.4 8.7-12.3 17.8-19.3 26.1-18.6 26.3-39.5 50.8-58.6 76.7 0 .8 0 1.7.1 2.5 23.4-6.8 46.5-14.2 69.8-21.1 5.7-.6 11.5-.1 17.3-.4 3.3-.4 5.8 2.1 8.6 3.4 24.1 12.7 51 18.8 77.5 23.8 5.2 1.2 10.7 1.6 15.9 3.2 3.4 2.2 7.2 4.3 9.5 7.7 11.5 15.5 22.6 32.3 26 51.6-6.5-14.7-16.1-27.9-27.2-39.4-2.2-2.1-4.1-5-7.2-5.9-33-12.5-67.7-19.1-102.1-26.6-6.1-1.2-12.1-3.2-18.4-3.6-4.8 1.2-9.2 3.4-13.8 5.1-21.2 8-42.3 16.1-63.6 23.9-1.7.5-1.8 2.7-2.5 4.1 11.2 1 22.5 1.7 33.5 4 .9.3 2.5.3 2.5 1.7 3.4 15 10.7 28.8 18.6 41.9 6.3 10.6 13.5 20.6 20.1 31 2.1 3.5 4.4 7 5.2 11-.3.5-1 1.7-1.4 2.2 7.4 16.6 12 34.4 13.6 52.5.4 3.7.7 7.3 1.6 10.9-.5-.9-1.3-1.7-1.6-2.7l-.1-.8c-.3-4.4-1.8-8.7-2.7-13-3.6-13.2-7.5-26.6-14.9-38.2-.7-1.9-3.4-1-4.3-2.7-8.2-10.2-13-22.5-19-34-7.8-15.3-15-31-25.4-44.7-10-3.2-20-6.2-30-9.4-.6 1.3-1.1 2.6-1.6 3.9 4.1 1.6 8.3 2.9 12.4 4.4-4 19.6-6.9 39.3-10.6 58.9-2 9.7-3.7 19.5-7.1 28.9-1 2.5-2.1 5.4-4.9 6.4-6.5 16.8-13.8 33.3-21 49.8-8.7 19.7-17.5 39.3-27 58.7-2.4 4.7-4.6 9.5-7.7 13.8 14-40.3 31.6-79.3 45.8-119.6-2-6.1.2-12.5 1.7-18.4 7.4-24.6 18.3-48 26.1-72.5-3.7-1.5-7.3-3.2-11-4.4-6.7 8.3-10.8 18.4-18.1 26.2-4.3 4.8-8.8 9.7-14.3 13.2-9.5 6.6-19.9 11.9-30.4 17-10.6 4.7-22.1 8.4-33.8 7.9-9.4-.8-19.1-4.3-25-11.9-9.2-11.6-12.9-26.4-14.9-40.8-2.9-3.9-6.3-7.6-7.7-12.4-3.4-9.6-1.1-20.9 5.7-28.5 1.8-2.3 4.3-3.7 6.3-5.8 4.5-12.6 12.2-23.9 21.6-33.5-12.5-8.8-24.2-18.9-38.1-25.5-17.7 10.4-34.1 22.8-50.9 34.5-22.3 15.9-45.2 31.5-71.1 41.1-2.3.4-2.1 2.9-2.3 4.6-.7 18.3-2.4 36.6-3.3 54.9-.7 6.9-.3 14-1.9 20.8-.9 3.3-3.1 6-5.1 8.7-.4-16.8.7-33.7.9-50.5 1.2-19.7 1.5-39.5 4.7-59 15.2-5.3 30.3-11 44.8-18.2 27.8-13.2 52.9-31.3 77.5-49.6 6.4-.4 12.7 1.6 18.5 4.2 8.4 3.5 16 8.6 23.7 13.4 4.7 2.9 8.9 6.6 14 8.9 1.7-.8 2.9-2.3 4.3-3.5-13.1-11.8-27.2-22.5-39.4-35.3-2.7-2.5-4.9-5.5-7.7-7.8-16.7-12.6-33-25.9-51.4-36-2.5-1-5.2-.8-7.8-1.2-14.7-1.6-29.2-4.5-44-6-4.3-.3-8.4-1.5-12.7-1.3-4.2.1-8.3-1.6-11.1-4.8 12 .5 23.9 2.1 35.9 2.9 13.6 1.4 27.3 2 40.8 3.6 13 6.8 25.1 15.1 37.7 22.6 10.2 5.9 20.4 12.2 31.6 16 2.3.8 4.7 1.3 7.2 1.6 7.8 8.9 14.5 19 23.9 26.4 3.9 2.9 6.5 7.2 7.7 11.9 9.1-5.7 20.1-6.5 30.6-7-5.7-25.5-12.1-50.7-18.7-76-.7-2.3-2.6-3.8-3.9-5.7-13.1-17.2-21.4-37.5-30.6-56.9-5.8-7.7-11.5-15.6-16.2-24.1-1.2-2.3-2.6-4.6-2.7-7.2 8.1 8.4 17.5 15.4 25.7 23.6 2.7 2.6 4.4 6 6.3 9.1 8.5 14.3 15.6 29.3 24 43.6 1.4 2.6 3.3 4.9 4.3 7.7 8.7 29.1 19.7 57.5 29.4 86.3 5.6.5 11.1 1.3 16.6 2.4 5.8-42 10.6-84.2 16.8-126.1 1.6-5.2 4.9-9.8 7-14.8 10.3-21.7 17.5-44.2 26.8-65.8zM406.2 521.1c-4.8 1.1-9.3 3.5-12.9 6.9-9.4 8.6-11.3 24-4.2 34.5 7 11.4 22.9 16 34.9 9.9 11.7-5.4 18.2-19.6 14.5-32-3.5-13.6-18.6-22.7-32.3-19.3zm62 10c-4.8 1.1-9.3 3.5-12.9 6.9-9.4 8.6-11.2 23.9-4.2 34.5 7 11.4 22.9 16 34.9 9.9 11.7-5.4 18.2-19.6 14.5-32-3.5-13.5-18.6-22.7-32.3-19.3z" />
+                            <path class="st0"
+                                d="M424.4 531.9c6.2-2.5 13.2 4.1 11.2 10.4-1.4 6.3-10.2 8.6-14.5 3.8-4.5-4.1-2.6-12.5 3.3-14.2zm5.4 6.3c-1.9 1.1-1.5 4.2.6 4.9 2 .9 4.4-1.5 3.5-3.5-.5-1.6-2.6-2.4-4.1-1.4zm55.7 5.5c6.2-2.5 13.3 4 11.2 10.4-1.4 6.2-10.1 8.6-14.5 3.9-4.5-4.1-2.6-12.5 3.3-14.3zm5.3 6.4c-1.5 1-1.5 3.5 0 4.5 1.7 1.3 4.3-.2 4.3-2.3.1-2.1-2.5-3.6-4.3-2.2z" />
+                        </g>
+                    </svg>
+                </a>
+            </span>
+
+            <span>
+                <a href="mailto:anton.puiu@email.com" target="_blank">
+                    <img src="resources/img/mail.png" width="62px">
+                </a>
+            </span>
+
+            <span>
+                <a href="https://github.com/antonpuiu" target="_blank">
+                    <img src="resources/img/github.png" width="62px">
+                </a>
+            </span>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Default</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/css/html_style.css" type="text/css" media="screen" />
+</head>
+
+<body>
+    <div class="front">
+        <header>
+            <nav class="site-name">
+                <a href="/">TermaDev</a>
+            </nav>
+
+            <nav class="links">
+                <a href="/html.html" class="current">HTML</a>
+                <a href="/css.html">CSS</a>
+                <a href="/js.html">JS</a>
+            </nav>
+        </header>
+
+        <main class="content">
+            <span>
+                <nav class="sidebar">
+                    <ul>
+                        <li><a href="#intro">Introduciton</a></li>
+                        <li><a href="#elements">Elements</a></li>
+                        <li><a href="#metadata">Metadata</a></li>
+                        <li><a href="#sectioning">Sectioning</a></li>
+                        <li><a href="#multimedia">Multimedia</a></li>
+                        <li><a href="#tables">Tables</a></li>
+                        <li><a href="#forms">Forms</a></li>
+
+                    </ul>
+                </nav>
+            </span>
+
+            <span class="content">
+                <h1>HyperText Markup Language (HTML)</h1>
+
+                <section id="intro">
+                    <h2>Introduction</h2>
+
+                    <p>
+                        HTML is the standard markup language for creating Web pages. HTML (HyperText Markup Language) is
+                        used to give content
+                        to a web page and instructs web
+                        browsers
+                        on how to structure
+                        that content.
+                    </p>
+
+                    <article>
+                        <h3>What is HTML?</h3>
+                        <ul>
+                            <li>HTML stands for Hyper Text Markup Language</li>
+                            <li>HTML is the standard markup language for creating Web pages</li>
+                            <li>HTML describes the structure of a Web page</li>
+                            <li>HTML consists of a series of elements</li>
+                            <li>HTML elements tell the browser how to display the content</li>
+                            <li>HTML elements label pieces of content such as "this is a heading", "this is a
+                                paragraph",
+                                "this is a link", etc.
+                            </li>
+                        </ul>
+                    </article>
+                </section>
+
+                <section id="elements">
+                    <h2>HTML Elements</h2>
+
+                    <p>
+                        HTML (Hypertext Markup Language) elements are the building blocks of web pages. They are used to
+                        structure and
+                        present content on the web.
+                    </p>
+
+                    <p>
+                        Each HTML element is represented by a tag enclosed in angle brackets
+                        (&lt;&gt;) and typically
+                        consists of an opening tag, content, and a closing tag. The opening tag indicates the
+                        beginning of the element,
+                        and the closing tag signifies the end. The content placed between these tags can include
+                        text, images, links,
+                        and other media, and it is formatted and displayed by web browsers according to the
+                        element's purpose and
+                        attributes.
+                    </p>
+                    <p>
+                        HTML elements are essential for defining the structure and layout of web pages,
+                        making them the foundation of web development.
+                    </p>
+                </section>
+
+                <section id="metadata">
+                    <h2>Document Metadata</h2>
+
+                    <p>
+                        Metadata contains information about the page. This includes information about styles, scripts
+                        and data to help
+                        software (search engines, browsers, etc.) use and render the page. Metadata for styles and
+                        scripts may be defined in
+                        the page or linked to another file that has the information.
+                    </p>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Element</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="#">&lt;base&gt;</a>
+                                </td>
+
+                                <td>
+                                    Specifies the base URL to use for all relative URLs in a document. There can be only
+                                    one such element in a document.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="#">&lt;head&gt;</a>
+                                </td>
+
+                                <td>
+                                    Contains machine-readable information (metadata) about the document, like its title,
+                                    scripts, and style sheets.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="#">&lt;link&gt;</a>
+                                </td>
+
+                                <td>
+                                    Specifies relationships between the current document and an external resource. This
+                                    element is most commonly used to
+                                    link to CSS but is also used to establish site icons (both "favicon" style icons and
+                                    icons for the home screen and
+                                    apps on mobile devices) among other things.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="#">&lt;meta&gt;</a>
+                                </td>
+
+                                <td>
+                                    Represents metadata that cannot be represented by other HTML meta-related elements,
+                                    like
+                                    &lt;base&gt;,
+                                    &lt;link&gt;,
+                                    &lt;script&gt;, &lt;style&gt;
+                                    and &lt;title&gt;.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="#">&lt;style&gt;</a></td>
+
+                                <td>
+                                    Contains style information for a document or part of a document. It contains CSS,
+                                    which is applied to the contents
+                                    of the document containing this element.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="#">&lt;title&gt;</a></td>
+
+                                <td>
+                                    Defines the document's title that is shown in a browser's title bar or a page's tab.
+                                    It only contains text; tags
+                                    within the element are ignored.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section id="sectioning">
+                    <h2>Content Sectioning</h2>
+                    <p>Content sectioning elements allow you to organize the document content into logical pieces. Use
+                        the sectioning elements to create a broad outline for your page content,
+                        including header and footer navigation,
+                        and heading elements to identify sections of content.
+                    </p>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Element</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="#">
+                                        &lt;address&gt;
+                                    </a>
+                                </td>
+
+                                <td>
+                                    Indicates that the enclosed HTML provides contact information for a person or
+                                    people, or for an organization.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="#">
+                                        &lt;article&gt;
+                                    </a>
+                                </td>
+
+                                <td>
+                                    Represents a self-contained composition in a document, page, application, or site,
+                                    which
+                                    is intended to be
+                                    independently distributable or reusable (e.g., in syndication). Examples include a
+                                    forum
+                                    post, a magazine or
+                                    newspaper article, a blog entry, a product card, a user-submitted comment, an
+                                    interactive widget or gadget, or any
+                                    other independent item of content.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="#">
+                                        &lt;aside&gt;
+                                    </a>
+                                </td>
+
+                                <td>
+                                    Represents a portion of a document whose content is only indirectly related to the
+                                    document's main content. Asides
+                                    are frequently presented as sidebars or call-out boxes.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="#">
+                                        &lt;footer&gt;
+                                    </a>
+                                </td>
+
+                                <td>
+                                    Represents a footer for its nearest ancestor sectioning content or sectioning root
+                                    element. A &lt;footer&gt; typically
+                                    contains information about the author of the section, copyright data, or links to
+                                    related documents.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="#">
+                                        &lt;header&gt;
+                                    </a>
+                                </td>
+
+                                <td>
+                                    Represents introductory content, typically a group of introductory or navigational
+                                    aids.
+                                    It may contain some heading
+                                    elements but also a logo, a search form, an author name, and other elements.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="#">
+                                        &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, &lt;h6&gt;
+                                    </a>
+                                </td>
+
+                                <td>
+                                    Represent six levels of section headings. &lt;h1&gt; is the highest section level
+                                    and
+                                    &lt;h6&gt; is
+                                    the lowest.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="#">
+                                        &lt;hgroup&gt;
+                                    </a>
+                                </td>
+
+                                <td>
+                                    Represents a heading grouped with any secondary content, such as subheadings, an
+                                    alternative title, or a tagline.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="#">
+                                        &lt;main&gt;
+                                    </a>
+                                </td>
+
+                                <td>
+                                    Represents the dominant content of the body of a document. The main content area
+                                    consists of content that is
+                                    directly related to or expands upon the central topic of a document, or the central
+                                    functionality of an application.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="#">
+                                        &lt;nav&gt;
+                                    </a>
+                                </td>
+
+                                <td>
+                                    Represents a section of a page whose purpose is to provide navigation links, either
+                                    within the current document or
+                                    to other documents. Common examples of navigation sections are menus, tables of
+                                    contents, and indexes.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="#">
+                                        &lt;section&gt;
+                                    </a>
+                                </td>
+
+                                <td>
+                                    Represents a generic standalone section of a document, which doesn't have a more
+                                    specific semantic element to
+                                    represent it. Sections should always have a heading, with very few exceptions.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="#">
+                                        &lt;search&gt;
+                                    </a>
+                                </td>
+
+                                <td>
+                                    Represents a part that contains a set of form controls or other content related to
+                                    performing a search or filtering
+                                    operation.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section id="multimedia">
+                    <h2>Image and Multimedia</h2>
+
+                    <p>
+                        HTML supports various multimedia resources such as images,
+                        audio, and video.
+                    </p>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Element</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="#">
+                                        &lt;area&gt;
+                                    </a>
+                                </td>
+
+                                <td>
+                                    Defines an area inside an image map that has predefined clickable areas. An image
+                                    map allows geometric areas on an
+                                    image to be associated with hyperlink.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="#">
+                                        &lt;audio&gt;
+                                    </a>
+                                </td>
+
+                                <td>
+                                    Used to embed sound content in documents. It may contain one or more audio sources,
+                                    represented using the src
+                                    attribute or the source element: the browser will choose the most suitable one. It
+                                    can also be the destination for
+                                    streamed media, using a MediaStream.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="#">
+                                        &lt;img&gt;
+                                    </a>
+                                </td>
+
+                                <td>
+                                    Embeds an image into the document.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="#">
+                                        &lt;map&gt;
+                                    </a>
+                                </td>
+
+                                <td>
+                                    Used with &lt;area&gt; elements to define an image map (a clickable link area).
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="#">
+                                        &lt;track&gt;
+                                    </a>
+                                </td>
+
+                                <td>
+                                    Used as a child of the media elements, audio and video. It lets you specify timed
+                                    text tracks (or time-based data),
+                                    for example to automatically handle subtitles.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="#">
+                                        &lt;video&gt;
+                                    </a>
+                                </td>
+
+                                <td>
+                                    Embeds a media player which supports video playback into the document. You can also
+                                    use &lt;video&gt; for audio content,
+                                    but the audio element may provide a more appropriate user experience.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section id="tables">
+                    <h2>Table Content</h2>
+
+                    <p>
+                        The elements here are used to create and handle tabular data.
+                    </p>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Element</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="#">
+                                        &lt;caption&gt;
+                                    </a>
+                                </td>
+
+                                <td>
+                                    Specifies the caption (or title) of a table.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="#">
+                                        &lt;col&gt;
+                                    </a>
+                                </td>
+
+                                <td>
+                                    Defines a column within a table and is used for defining common semantics on all
+                                    common cells. It is generally found
+                                    within a &lt;colgroup&gt; element.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="#">
+                                        &lt;colgroup&gt;
+                                    </a>
+                                </td>
+
+                                <td>
+                                    Defines a group of columns within a table.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="#">
+                                        &lt;table&gt;
+                                    </a>
+                                </td>
+
+                                <td>
+                                    Represents tabular data — that is, information presented in a two-dimensional table
+                                    comprised of rows and columns of
+                                    cells containing data.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="#">
+                                        &lt;tbody&gt;
+                                    </a>
+                                </td>
+
+                                <td>
+                                    Encapsulates a set of table rows (
+                                    &lt;tr&gt; elements), indicating that they comprise the body of the table
+                                    (&lt;table&gt;).
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="#">
+                                        &lt;td&gt;
+                                    </a>
+                                </td>
+
+                                <td>
+                                    Defines a cell of a table that contains data. It participates in the table model.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="#">
+                                        &lt;tfoot&gt;
+                                    </a>
+                                </td>
+
+                                <td>
+                                    Defines a set of rows summarizing the columns of the table.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="#">
+                                        &lt;th&gt;
+                                    </a>
+                                </td>
+
+                                <td>
+                                    Defines a cell as a header of a group of table cells. The exact nature of this group
+                                    is defined by the scope and
+                                    headers attributes.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="#">
+                                        &lt;thead&gt;
+                                    </a>
+                                </td>
+
+                                <td>
+                                    Defines a set of rows defining the head of the columns of the table.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="#">
+                                        &lt;tr&gt;
+                                    </a>
+                                </td>
+
+                                <td>
+                                    Defines a row of cells in a table. The row's cells can then be established using a
+                                    mix of
+                                    &lt;td&gt; (data cell) and
+                                    &lt;th&gt; (header cell) elements.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section id="forms">
+                    <h2>Forms</h2>
+
+                    <p>
+                        HTML provides several elements that can be used together to create forms that the user can fill
+                        out and submit to the website or application.
+                    </p>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Element</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="#">
+                                        &lt;button&gt;
+                                    </a>
+                                </td>
+
+                                <td>
+                                    An interactive element activated by a user with a mouse, keyboard, finger, voice
+                                    command, or other assistive
+                                    technology. Once activated, it performs an action, such as submitting a form or
+                                    opening a dialog.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="#">
+                                        &lt;datalist&gt;
+                                    </a>
+                                </td>
+
+                                <td>
+                                    Contains a set of &lt;option&gt; elements that represent the permissible or
+                                    recommended
+                                    options available to choose from
+                                    within other controls.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="#">
+                                        &lt;fieldset&gt;
+                                    </a>
+                                </td>
+
+                                <td>
+                                    Used to group several controls as well as labels (&lt;label&gt;) within a web form.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="#">
+                                        &lt;form&gt;
+                                    </a>
+                                </td>
+
+                                <td>
+                                    Represents a document section containing interactive controls for submitting
+                                    information.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="#">
+                                        &lt;input&gt;
+                                    </a>
+                                </td>
+
+                                <td>
+                                    Used to create interactive controls for web-based forms to accept data from the
+                                    user; a wide variety of types of
+                                    input data and control widgets are available, depending on the device and user
+                                    agent. The &lt;input&gt; element is one of
+                                    the most powerful and complex in all of HTML due to the sheer number of combinations
+                                    of input types and attributes.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="#">
+                                        &lt;label&gt;
+                                    </a>
+                                </td>
+
+                                <td>
+                                    Represents a caption for an item in a user interface.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="#">
+                                        &lt;legend&gt;
+                                    </a>
+                                </td>
+
+                                <td>
+                                    Represents a caption for the content of its parent &lt;fieldset&gt;.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="#">
+                                        &lt;meter&gt;
+                                    </a>
+                                </td>
+
+                                <td>
+                                    Represents either a scalar value within a known range or a fractional value.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="#">
+                                        &lt;progress&gt;
+                                    </a>
+                                </td>
+
+                                <td>
+                                    Displays an indicator showing the completion progress of a task, typically displayed
+                                    as a progress bar.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="#">
+                                        &lt;select&gt;
+                                    </a>
+                                </td>
+
+                                <td>
+                                    Represents a control that provides a menu of options.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="#">
+                                        &lt;textarea&gt;
+                                    </a>
+                                </td>
+
+                                <td>
+                                    Represents a multi-line plain-text editing control, useful when you want to allow
+                                    users to enter a sizeable amount
+                                    of free-form text, for example, a comment on a review or feedback form.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </span>
+        </main>
+        <footer><span><a href="https://notabug.org/anton.puiu" target="_blank"><svg width="62px" height="62px"
+                        viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                        <style>
+                            .st0 {
+                                fill: #fff
+                            }
+                        </style>
+                        <g id="Icon">
+                            <circle id="Background" cx="512" cy="512" r="512" />
+                            <path class="st0"
+                                d="M560 256c.6-1.8 2.5-3.2 4.4-2.8 1.5.4 2.1 2 2.4 3.4 5.2 23.2 7 47.3 3.8 71-1.7-11.1-3.4-22.1-5-33.2-.6-7.8-2.5-15.5-3.6-23.2-5.4 21.1-12.1 42.2-23.9 60.7-1.2 2.1-2.9 3.9-3.3 6.3-3.5 42.9-7 85.8-10.5 128.8 8.9 4 16.1 11.3 19.7 20.4 27.8-29.3 54-60.3 76.1-94 50.8-9.7 96.9-33.8 144.4-53.1 13.6 13.2 26.9 26.8 39.2 41.2 3.9 4.9 8.3 9.5 10.7 15.4-17.2-16.1-34.2-32.6-51.4-48.8-32.6 12.9-61.7 33.3-94.4 46-11.6 4.6-23.7 7.9-35.9 10.4-2.3.7-5.3.5-6.7 2.9-6.4 8.7-12.3 17.8-19.3 26.1-18.6 26.3-39.5 50.8-58.6 76.7 0 .8 0 1.7.1 2.5 23.4-6.8 46.5-14.2 69.8-21.1 5.7-.6 11.5-.1 17.3-.4 3.3-.4 5.8 2.1 8.6 3.4 24.1 12.7 51 18.8 77.5 23.8 5.2 1.2 10.7 1.6 15.9 3.2 3.4 2.2 7.2 4.3 9.5 7.7 11.5 15.5 22.6 32.3 26 51.6-6.5-14.7-16.1-27.9-27.2-39.4-2.2-2.1-4.1-5-7.2-5.9-33-12.5-67.7-19.1-102.1-26.6-6.1-1.2-12.1-3.2-18.4-3.6-4.8 1.2-9.2 3.4-13.8 5.1-21.2 8-42.3 16.1-63.6 23.9-1.7.5-1.8 2.7-2.5 4.1 11.2 1 22.5 1.7 33.5 4 .9.3 2.5.3 2.5 1.7 3.4 15 10.7 28.8 18.6 41.9 6.3 10.6 13.5 20.6 20.1 31 2.1 3.5 4.4 7 5.2 11-.3.5-1 1.7-1.4 2.2 7.4 16.6 12 34.4 13.6 52.5.4 3.7.7 7.3 1.6 10.9-.5-.9-1.3-1.7-1.6-2.7l-.1-.8c-.3-4.4-1.8-8.7-2.7-13-3.6-13.2-7.5-26.6-14.9-38.2-.7-1.9-3.4-1-4.3-2.7-8.2-10.2-13-22.5-19-34-7.8-15.3-15-31-25.4-44.7-10-3.2-20-6.2-30-9.4-.6 1.3-1.1 2.6-1.6 3.9 4.1 1.6 8.3 2.9 12.4 4.4-4 19.6-6.9 39.3-10.6 58.9-2 9.7-3.7 19.5-7.1 28.9-1 2.5-2.1 5.4-4.9 6.4-6.5 16.8-13.8 33.3-21 49.8-8.7 19.7-17.5 39.3-27 58.7-2.4 4.7-4.6 9.5-7.7 13.8 14-40.3 31.6-79.3 45.8-119.6-2-6.1.2-12.5 1.7-18.4 7.4-24.6 18.3-48 26.1-72.5-3.7-1.5-7.3-3.2-11-4.4-6.7 8.3-10.8 18.4-18.1 26.2-4.3 4.8-8.8 9.7-14.3 13.2-9.5 6.6-19.9 11.9-30.4 17-10.6 4.7-22.1 8.4-33.8 7.9-9.4-.8-19.1-4.3-25-11.9-9.2-11.6-12.9-26.4-14.9-40.8-2.9-3.9-6.3-7.6-7.7-12.4-3.4-9.6-1.1-20.9 5.7-28.5 1.8-2.3 4.3-3.7 6.3-5.8 4.5-12.6 12.2-23.9 21.6-33.5-12.5-8.8-24.2-18.9-38.1-25.5-17.7 10.4-34.1 22.8-50.9 34.5-22.3 15.9-45.2 31.5-71.1 41.1-2.3.4-2.1 2.9-2.3 4.6-.7 18.3-2.4 36.6-3.3 54.9-.7 6.9-.3 14-1.9 20.8-.9 3.3-3.1 6-5.1 8.7-.4-16.8.7-33.7.9-50.5 1.2-19.7 1.5-39.5 4.7-59 15.2-5.3 30.3-11 44.8-18.2 27.8-13.2 52.9-31.3 77.5-49.6 6.4-.4 12.7 1.6 18.5 4.2 8.4 3.5 16 8.6 23.7 13.4 4.7 2.9 8.9 6.6 14 8.9 1.7-.8 2.9-2.3 4.3-3.5-13.1-11.8-27.2-22.5-39.4-35.3-2.7-2.5-4.9-5.5-7.7-7.8-16.7-12.6-33-25.9-51.4-36-2.5-1-5.2-.8-7.8-1.2-14.7-1.6-29.2-4.5-44-6-4.3-.3-8.4-1.5-12.7-1.3-4.2.1-8.3-1.6-11.1-4.8 12 .5 23.9 2.1 35.9 2.9 13.6 1.4 27.3 2 40.8 3.6 13 6.8 25.1 15.1 37.7 22.6 10.2 5.9 20.4 12.2 31.6 16 2.3.8 4.7 1.3 7.2 1.6 7.8 8.9 14.5 19 23.9 26.4 3.9 2.9 6.5 7.2 7.7 11.9 9.1-5.7 20.1-6.5 30.6-7-5.7-25.5-12.1-50.7-18.7-76-.7-2.3-2.6-3.8-3.9-5.7-13.1-17.2-21.4-37.5-30.6-56.9-5.8-7.7-11.5-15.6-16.2-24.1-1.2-2.3-2.6-4.6-2.7-7.2 8.1 8.4 17.5 15.4 25.7 23.6 2.7 2.6 4.4 6 6.3 9.1 8.5 14.3 15.6 29.3 24 43.6 1.4 2.6 3.3 4.9 4.3 7.7 8.7 29.1 19.7 57.5 29.4 86.3 5.6.5 11.1 1.3 16.6 2.4 5.8-42 10.6-84.2 16.8-126.1 1.6-5.2 4.9-9.8 7-14.8 10.3-21.7 17.5-44.2 26.8-65.8zM406.2 521.1c-4.8 1.1-9.3 3.5-12.9 6.9-9.4 8.6-11.3 24-4.2 34.5 7 11.4 22.9 16 34.9 9.9 11.7-5.4 18.2-19.6 14.5-32-3.5-13.6-18.6-22.7-32.3-19.3zm62 10c-4.8 1.1-9.3 3.5-12.9 6.9-9.4 8.6-11.2 23.9-4.2 34.5 7 11.4 22.9 16 34.9 9.9 11.7-5.4 18.2-19.6 14.5-32-3.5-13.5-18.6-22.7-32.3-19.3z" />
+                            <path class="st0"
+                                d="M424.4 531.9c6.2-2.5 13.2 4.1 11.2 10.4-1.4 6.3-10.2 8.6-14.5 3.8-4.5-4.1-2.6-12.5 3.3-14.2zm5.4 6.3c-1.9 1.1-1.5 4.2.6 4.9 2 .9 4.4-1.5 3.5-3.5-.5-1.6-2.6-2.4-4.1-1.4zm55.7 5.5c6.2-2.5 13.3 4 11.2 10.4-1.4 6.2-10.1 8.6-14.5 3.9-4.5-4.1-2.6-12.5 3.3-14.3zm5.3 6.4c-1.5 1-1.5 3.5 0 4.5 1.7 1.3 4.3-.2 4.3-2.3.1-2.1-2.5-3.6-4.3-2.2z" />
+                        </g>
+                    </svg>
+                </a>
+            </span>
+
+            <span>
+                <a href="mailto:anton.puiu@email.com" target="_blank">
+                    <img src="resources/img/mail.png" width="62px">
+                </a>
+            </span>
+
+            <span>
+                <a href="https://github.com/antonpuiu" target="_blank">
+                    <img src="resources/img/github.png" width="62px">
+                </a>
+            </span>
+        </footer>
+    </div>
+</body>
+
+</html>

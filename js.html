@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>TermaDev - Javascript</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/css/html_style.css" type="text/css" media="screen" />
+</head>
+
+<body>
+    <div class="front">
+        <header>
+            <nav class="site-name">
+                <a href="/">TermaDev</a>
+            </nav>
+
+            <nav class="links">
+                <a href="/html.html">HTML</a>
+                <a href="/css.html">CSS</a>
+                <a href="/js.html" class="current">JS</a>
+            </nav>
+        </header>
+
+        <main class="content">
+            <span>
+                <nav class="sidebar">
+                    <ul>
+                        <li><a href="#fundamentals">Fundamentals</a></li>
+                        <li><a href="#functions">Functions</a></li>
+                        <li><a href="#iterators">Iterators</a></li>
+                        <li><a href="#requests">Requests</a></li>
+                    </ul>
+                </nav>
+            </span>
+
+            <span class="content">
+                <h1>Javascript (JS)</h1>
+
+                <section id="fundamentals">
+                    <h2>Fundamentals</h2>
+
+                    <article>
+                        <h3>console.log()</h3>
+
+                        <p>
+                            The console.log() method is used to log or print messages to the console. It can also be
+                            used
+                            to print objects and
+                            other info.
+                        </p>
+
+                        <code class="center">
+console.log('Hi there!');
+// Prints: Hi there!
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>JavaScript</h3>
+
+                        <p>
+                            JavaScript is a programming language that powers the dynamic behavior on most websites.
+                            Alongside HTML and CSS, it
+                            is a core technology that makes the web run.
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3>Methods</h3>
+
+                        <p>
+                            Methods return information about an object, and are called by appending an instance with a
+                            period ., the method
+                            name, and parentheses.
+                        </p>
+
+                        <code class="center">
+// Returns a number between 0 and 1
+Math.random();
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>Built-in Objects</h3>
+
+                        <p>
+                            Built-in objects contain methods that can be called by appending the object name with a
+                            period ., the method name,
+                            and a set of parentheses.
+                        </p>
+
+                        <code class="center">
+Math.random();
+// ☝️ Math is the built-in object
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>Numbers</h3>
+
+                        <p>
+                            Numbers are a primitive data type. They include the set of all integers and floating point
+                            numbers.
+                        </p>
+
+                        <code class="center">
+let amount = 6;
+let price = 4.99;
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>String .length</h3>
+
+                        <p>
+                            The .length property of a string returns the number of characters that make up the string.
+                        </p>
+
+                        <code class="center">
+let message = 'good nite';
+console.log(message.length);
+// Prints: 9
+
+console.log('howdy'.length);
+// Prints: 5
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>Data Instances</h3>
+
+                        <p>
+                            When a new piece of data is introduced into a JavaScript program, the program keeps track of
+                            it in an instance of
+                            that data type. An instance is an individual case of a data type.
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3>Booleans</h3>
+
+                        <p>
+                            Booleans are a primitive data type. They can be either true or false.
+                        </p>
+
+                        <code class="center">
+let lateToWork = true;
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>Math.random()</h3>
+
+                        <p>
+                            The Math.random() method returns a floating-point, random number in the range from 0
+                            (inclusive) up to but not
+                            including 1.
+                        </p>
+
+                        <code class="center">
+console.log(Math.random());
+// Prints: 0 - 0.9999999999999999
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>Math.floor()</h3>
+
+                        <p>
+                            The Math.floor() function returns the largest integer less than or equal to the given
+                            number.
+                        </p>
+
+                        <code class="center">
+console.log(Math.floor(5.95));
+// Prints: 5
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>Single Line Comments</h3>
+
+                        <p>
+                            In JavaScript, single-line comments are created with two consecutive forward slashes //.
+                        </p>
+
+                        <code class="center">
+// This line will denote a comment
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>Null</h3>
+
+                        <p>
+                            Null is a primitive data type. It represents the intentional absence of value. In code, it
+                            is represented as null.
+                        </p>
+
+                        <code class="center">
+let x = null;
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>Strings</h3>
+
+                        <p>
+                            Strings are a primitive data type. They are any grouping of characters (letters, spaces,
+                            numbers, or symbols)
+                            surrounded by single quotes ' or double quotes ".
+                        </p>
+
+                        <code class="center">
+let single = 'Wheres my bandit hat?';
+let double = "Wheres my bandit hat?";
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>Arithmetic Operators</h3>
+
+                        <p>
+                            JavaScript supports arithmetic operators for:
+                        </p>
+
+                        <ul>
+                            <li>+ addition</li>
+                            <li>- substraction</li>
+                            <li>* multiplication</li>
+                            <li>/ division</li>
+                            <li>% modulo</li>
+                        </ul>
+
+                        <code class="center">
+// Addition
+5 + 5
+// Subtraction
+10 - 5
+// Multiplication
+5 * 10
+// Division
+10 / 5
+// Modulo
+10 % 5
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>Multi-line Comments</h3>
+
+                        <p>
+                            In JavaScript, multi-line comments are created by surrounding the lines with /* at the
+                            beginning and */ at the end.
+                            Comments are good ways for a variety of reasons like explaining a code block or indicating
+                            some hints, etc.
+                        </p>
+
+                        <code class="center">
+/*
+The below configuration must be
+changed before deployment.
+*/
+
+let baseUrl = 'localhost/taxwebapp/country';
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>Remainder / Modulo Operator</h3>
+
+                        <p>
+                            The remainder operator, sometimes called modulo, returns the number that remains after the
+                            right-hand number divides
+                            into the left-hand number as many times as it evenly can.
+                        </p>
+
+                        <code class="center">
+// calculates # of weeks in a year, rounds down to nearest integer
+const weeksInYear = Math.floor(365/7);
+
+// calcuates the number of days left over after 365 is divded by 7
+const daysLeftOver = 365 % 7 ;
+
+console.log("A year has " + weeksInYear + " weeks and " + daysLeftOver + " days");
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>Assignment Operators</h3>
+
+                        <p>
+                            An assignment operator assigns a value to its left operand based on the value of its right
+                            operand. Here are some of
+                            them:
+                        </p>
+
+                        <ul>
+                            <li>+= addition assignment</li>
+                            <li>-= substraction assignment</li>
+                            <li>*= multiplication assignment</li>
+                            <li>/= division assignment</li>
+                        </ul>
+
+                        <code class="center">
+let number = 100;
+
+// Both statements will add 10
+number = number + 10;
+number += 10;
+
+console.log(number);
+// Prints: 120
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>String Interpolation</h3>
+
+                        <p>
+                            String interpolation is the process of evaluating string literals containing one or more
+                            placeholders (expressions,
+                            variables, etc).
+                        </p>
+
+                        <p>
+                            It can be performed using template literals: text ${expression} text.
+                        </p>
+
+                        <code class="center">
+let age = 7;
+
+// String concatenation
+'Tommy is ' + age + ' years old.';
+
+// String interpolation
+`Tommy is ${age} years old.`;
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>Variables</h3>
+
+                        <p>
+                            Variables are used whenever there’s a need to store a piece of data. A variable contains
+                            data that can be used in
+                            the program elsewhere. Using variables also ensures code re-usability since it can be used
+                            to replace the same value
+                            in multiple places.
+                        </p>
+
+                        <code class="center">
+const currency = '$';
+let userIncome = 85000;
+
+console.log(currency + userIncome + ' is more than the average income.');
+// Prints: $85000 is more than the average income.
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>Undefined</h3>
+
+                        <p>
+                            undefined is a primitive JavaScript value that represents lack of defined value. Variables
+                            that are declared but not
+                            initialized to a value will have the value undefined.
+                        </p>
+
+                        <code class="center">
+var a;
+
+console.log(a);
+// Prints: undefined
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>Learn Javascript: Variables</h3>
+
+                        <p>
+                            A variable is a container for data that is stored in computer memory. It is referenced by a
+                            descriptive name that a
+                            programmer can call to assign a specific value and retrieve it.
+                        </p>
+
+                        <code class="center">
+// Examples of variables
+let name = "Tammy";
+const found = false;
+var age = 3;
+console.log(name, found, age);
+// Prints: Tammy false 3
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>Declaring Variables</h3>
+
+                        <p>
+                            To declare a variable in JavaScript, any of these three keywords can be used along with a
+                            variable name:
+                        </p>
+
+                        <ul>
+                            <li>var is used in pre-ES6 versions of JavaScript.</li>
+                            <li>let is the preferred way to declare a variable when it can be reassigned.</li>
+                            <li>const is the preferred way to declare a variable with a constant value.</li>
+                        </ul>
+
+                        <code class="center">
+var age;
+let weight;
+const numberOfFingers = 20;
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>Template Literals</h3>
+
+                        <p>
+                            Template literals are strings that allow embedded expressions, ${expression}. While regular
+                            strings use single ' or
+                            double " quotes, template literals use backticks instead.
+                        </p>
+
+                        <code class="center">
+let name = "Codecademy";
+console.log(`Hello, ${name}`);
+// Prints: Hello, Codecademy
+
+console.log(`Billy is ${6+8} years old.`);
+// Prints: Billy is 14 years old.
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>let Keyword</h3>
+
+                        <p>
+                            let creates a local variable in JavaScript & can be re-assigned. Initialization during the
+                            declaration of a let
+                            variable is optional. A let variable will contain undefined if nothing is assigned to it.
+                        </p>
+
+                        <code class="center">
+let count;
+console.log(count); // Prints: undefined
+count = 10;
+console.log(count); // Prints: 10
+</code>
+                    </article>
+
+                    <article>
+                        <h3>const Keyword</h3>
+
+                        <p>
+                            A constant variable can be declared using the keyword const. It must have an assignment. Any
+                            attempt of re-assigning
+                            a const variable will result in JavaScript runtime error.
+                        </p>
+
+                        <code class="center">
+const numberOfColumns = 4;
+numberOfColumns = 8;
+// TypeError: Assignment to constant variable.
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>String Concatenation</h3>
+
+                        <p>
+                            In JavaScript, multiple strings can be concatenated together using the + operator. In the
+                            example, multiple strings
+                            and variables containing string values have been concatenated. After execution of the code
+                            block, the displayText
+                            variable will contain the concatenated string.
+                        </p>
+
+                        <code class="center">
+let service = 'credit card';
+let month = 'May 30th';
+let displayText = 'Your ' + service  + ' bill is due on ' +  month + '.';
+
+console.log(displayText);
+// Prints: Your credit card bill is due on May 30th.
+                        </code>
+                    </article>
+                </section>
+
+                <section id="functions">
+                    <h2>Functions</h2>
+
+                    <article>
+                        <h3>Arrow Functions (ES6)</h3>
+
+                        <p>
+                            Arrow function expressions were introduced in ES6. These expressions are clean and concise.
+                            The syntax for an arrow
+                            function expression does not require the function keyword and uses a fat arrow => to
+                            separate the parameter(s) from
+                            the body.
+                        </p>
+
+                        <p>
+                            There are several variations of arrow functions:
+                        </p>
+
+                        <ul>
+                            <li>
+                                Arrow functions with a single parameter do not require () around the parameter list.
+                            </li>
+                            <li>
+                                Arrow functions with a single expression can use the concise function body which returns
+                                the result of the
+                                expression without the return keyword.
+                            </li>
+                        </ul>
+
+                        <code class="center">
+// Arrow function with two parameters
+const sum = (firstParam, secondParam) => {
+  return firstParam + secondParam;
+};
+console.log(sum(2,5)); // Prints: 7
+
+// Arrow function with no parameters
+const printHello = () => {
+  console.log('hello');
+};
+printHello(); // Prints: hello
+
+// Arrow functions with a single parameter
+const checkWeight = weight => {
+  console.log(`Baggage weight : ${weight} kilograms.`);
+};
+checkWeight(25); // Prints: Baggage weight : 25 kilograms.
+
+
+// Concise arrow functions
+const multiply = (a, b) => a * b;
+console.log(multiply(2, 30)); // Prints: 60
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>Functions</h3>
+
+                        <p>
+                            Functions are one of the fundamental building blocks in JavaScript. A function is a reusable
+                            set of statements to
+                            perform a task or calculate a value. Functions can be passed one or more values and can
+                            return a value at the end of
+                            their execution. In order to use a function, you must define it somewhere in the scope where
+                            you wish to call it.
+                        </p>
+
+                        <p>
+                            The example code provided contains a function that takes in 2 values and returns the sum of
+                            those numbers.
+                        </p>
+
+                        <code class="center">
+// Defining the function:
+function sum(num1, num2) {
+  return num1 + num2;
+}
+
+// Calling the function:
+sum(3, 6); // 9
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>Anonymous Functions</h3>
+
+                        <p>
+                            Anonymous functions in JavaScript do not have a name property. They can be defined using the
+                            function keyword, or as
+                            an arrow function. See the code example for the difference between a named function and an
+                            anonymous function.
+                        </p>
+
+                        <code class="center">
+// Named function
+function rocketToMars() {
+  return 'BOOM!';
+}
+
+// Anonymous function
+const rocketToMars = function() {
+  return 'BOOM!';
+}
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>Function Expressions</h3>
+
+                        <p>
+                            Function expressions create functions inside an expression instead of as a function
+                            declaration. They can be
+                            anonymous and/or assigned to a variable.
+                        </p>
+
+                        <code class="center">
+const dog = function() {
+  return 'Woof!';
+}
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>Function Parameters</h3>
+
+                        <p>
+                            Inputs to functions are known as parameters when a function is declared or defined.
+                            Parameters are used as variables
+                            inside the function body. When the function is called, these parameters will have the value
+                            of whatever is passed in
+                            as arguments. It is possible to define a function without parameters.
+                        </p>
+
+                        <code class="center">
+// The parameter is name
+function sayHello(name) {
+  return `Hello, ${name}!`;
+}
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>return Keyword</h3>
+
+                        <p>
+                            Functions return (pass back) values using the return keyword. return ends function execution
+                            and returns the
+                            specified value to the location where it was called. A common mistake is to forget the
+                            return keyword, in which case
+                            the function will return undefined by default.
+                        </p>
+
+                        <code class="center">
+// With return
+function sum(num1, num2) {
+  return num1 + num2;
+}
+
+// Without return, so the function doesn't output the sum
+function sum(num1, num2) {
+  num1 + num2;
+}
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>Function Declaration</h3>
+
+                        <p>
+                            Function declarations are used to create named functions. These functions can be called
+                            using their declared name.
+                            Function declarations are built from:
+                        </p>
+
+                        <ul>
+                            <li>The function keyword.</li>
+                            <li>The function name.</li>
+                            <li>An optional list of parameters separated by commas enclosed by a set of parentheses ().
+                            </li>
+                            <li>A function body enclosed in a set of curly braces {}.</li>
+                        </ul>
+
+                        <code class="center">
+function add(num1, num2) {
+  return num1 + num2;
+}
+</code>
+                    </article>
+
+                    <article>
+                        <h3>Calling Functions</h3>
+
+                        <p>
+                            Functions can be called, or executed, elsewhere in code using parentheses following the
+                            function name. When a
+                            function is called, the code inside its function body runs. Arguments are values passed into
+                            a function when it is
+                            called.
+                        </p>
+
+                        <code class="center">
+// Defining the function
+function sum(num1, num2) {
+  return num1 + num2;
+}
+
+// Calling the function
+sum(2, 4); // 6
+                        </code>
+                    </article>
+
+
+                </section>
+
+                <section id="iterators">
+                    <h2>Iterators</h2>
+
+                    <article>
+                        <h3>Functions Assigned to Variables</h3>
+
+                        <p>
+                            In JavaScript, functions are a data type just as strings, numbers, and arrays are data
+                            types. Therefore, functions
+                            can be assigned as values to variables, but are different from all other data types because
+                            they can be invoked.
+                        </p>
+
+                        <code class="center">
+let plusFive = (number) => {
+  return number + 5;
+};
+// f is assigned the value of plusFive
+let f = plusFive;
+
+plusFive(3); // 8
+// Since f has a function value, it can be invoked.
+f(9); // 14
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>Callback Functions</h3>
+
+                        <p>
+                            In JavaScript, a callback function is a function that is passed into another function as an
+                            argument. This function
+                            can then be invoked during the execution of that higher order function (that it is an
+                            argument of).
+                        </p>
+
+                        <p>
+                            Since, in JavaScript, functions are objects, functions can be passed as arguments.
+                        </p>
+
+                        <code class="center">
+const isEven = (n) => {
+  return n % 2 == 0;
+}
+
+let printMsg = (evenFunc, num) => {
+  const isNumEven = evenFunc(num);
+  console.log(`The number ${num} is an even number: ${isNumEven}.`)
+}
+
+// Pass in isEven as the callback function
+printMsg(isEven, 4);
+// Prints: The number 4 is an even number: True.
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>Higher-Order Functions</h3>
+
+                        <p>
+                            In Javascript, functions can be assigned to variables in the same way that strings or arrays
+                            can. They can be passed
+                            into other functions as parameters or returned from them as well.
+                        </p>
+
+                        <p>
+                            A “higher-order function” is a function that accepts functions as parameters and/or returns
+                            a function.
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3>JavaScript Functions: First-Class Objects</h3>
+
+                        <p>
+                            JavaScript functions are first-class objects. Therefore:
+                        </p>
+
+                        <ul>
+                            <li>They have built-in properties and methods, such as the name property and the .toString()
+                                method.</li>
+                            <li>Properties and methods can be added to them.</li>
+                            <li>They can be passed as arguments and returned from other functions.</li>
+                            <li>They can be assigned to variables, array elements, and other objects.</li>
+                        </ul>
+
+                        <code class="center">
+//Assign a function to a variable originalFunc
+const originalFunc = (num) => { return num + 2 };
+
+//Re-assign the function to a new variable newFunc
+const newFunc = originalFunc;
+
+//Access the function's name property
+newFunc.name; //'originalFunc'
+
+//Return the function's body as a string
+newFunc.toString(); //'(num) => { return num + 2 }'
+
+//Add our own isMathFunction property to the function
+newFunc.isMathFunction = true;
+
+//Pass the function as an argument
+const functionNameLength = (func) => { return func.name.length };
+functionNameLength(originalFunc); //12
+
+//Return the function
+const returnFunc = () => { return newFunc };
+returnFunc(); //[Function: originalFunc]
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>The .reduce() Method</h3>
+
+                        <p>
+                            The .reduce() method iterates through an array and returns a single value.
+                        </p>
+
+                        <p>
+                            In the above code example, the .reduce() method will sum up all the elements of the array.
+                            It takes a callback
+                            function with two parameters (accumulator, currentValue) as arguments. On each iteration,
+                            accumulator is the value
+                            returned by the last iteration, and the currentValue is the current element. Optionally, a
+                            second argument can be
+                            passed which acts as the initial value of the accumulator.
+                        </p>
+
+                        <code class="center">
+const arrayOfNumbers = [1, 2, 3, 4];
+
+const sum = arrayOfNumbers.reduce((accumulator, currentValue) => {
+  return accumulator + currentValue;
+});
+
+console.log(sum); // 10
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>The .forEach() Method</h3>
+
+                        <p>
+                            The .forEach() method executes a callback function on each of the elements in an array in
+                            order.
+                        </p>
+
+                        <p>
+                            In the above example code, the callback function containing a console.log() method will be
+                            executed 5 times, once
+                            for each element.
+                        </p>
+
+                        <code class="center">
+const numbers = [28, 77, 45, 99, 27];
+
+numbers.forEach(number => {
+  console.log(number);
+});
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>The .filter() Method</h3>
+
+                        <p>
+                            The .filter() method executes a callback function on each element in an array. The callback
+                            function for each of the
+                            elements must return either true or false. The returned array is a new array with any
+                            elements for which the
+                            callback function returns true.
+                        </p>
+
+                        <p>
+                            In the above code example, the array filteredArray will contain all the elements of
+                            randomNumbers but 4.
+                        </p>
+
+                        <code class="center">
+const randomNumbers = [4, 11, 42, 14, 39];
+const filteredArray = randomNumbers.filter(n => {
+  return n > 5;
+});
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>The .map() Method</h3>
+
+                        <p>
+                            The .map() method executes a callback function on each element in an array. It returns a new
+                            array made up of the
+                            return values from the callback function.
+                        </p>
+
+                        <p>
+                            The original array does not get altered, and the returned array may contain different
+                            elements than the original
+                            array.
+                        </p>
+
+                        <p>
+                            In the example code above, the .map() method is used to add ' joined the contest.' string at
+                            the end of each element
+                            in the finalParticipants array.
+                        </p>
+
+                        <code class="center">
+const finalParticipants = ['Taylor', 'Donald', 'Don', 'Natasha', 'Bobby'];
+
+// add string after each final participant
+const announcements = finalParticipants.map(member => {
+  return member + ' joined the contest.';
+})
+
+console.log(announcements);
+                        </code>
+                    </article>
+
+
+                </section>
+
+                <section id="requests">
+                    <h2>Requests</h2>
+
+                    <article>
+                        <h3>JSON-Formatted Response Body</h3>
+
+                        <p>
+                            The .json() method will resolve a returned promise to a JSON object, parsing the body text
+                            as JSON.
+                        </p>
+
+                        <p>
+                            In the example code, the .json() method is used on the response object which returns a
+                            promise to a JSON-formatted
+                            response body as jsonResponse.
+                        </p>
+
+                        <code class="center">
+fetch('url')
+.then(
+  response => response.json()
+).then(jsonResponse => {
+  console.log(jsonResponse);
+});
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>HTTP GET Request</h3>
+
+                        <p>
+                            HTTP GET requests are made with the intention of retrieving information or data from a
+                            source (server) over the web.
+                        </p>
+
+                        <p>
+                            GET requests have no body, so the information that the source requires, in order to return
+                            the proper response, must
+                            be included in the request URL path or query string.
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3>The fetch() Function</h3>
+
+                        <p>
+                            The JavaScript Fetch API is used to write HTTP requests using Promises. The main fetch()
+                            function accepts a URL
+                            parameter and returns a promise that resolves to a response object or rejects with an error
+                            message if a network
+                            error occurs.
+                        </p>
+
+                        <p>
+                            The example code begins by calling the fetch() function. Then a then() method is chained to
+                            the end of the fetch().
+                            It ends with the response callback to handle success and the rejection callback to handle
+                            failure.
+                        </p>
+
+                        <code class="center">
+fetch('url')
+.then(
+  response  => {
+    console.log(response);
+  },
+ rejection => {
+    console.error(rejection.message);
+);
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>Customizing Fetch Requests</h3>
+
+                        <p>
+                            The fetch() function accepts an optional second argument, an options object, used to
+                            customize the request. This can
+                            be used to change the request type, headers, specify a request body, and much more.
+                        </p>
+
+                        <p>
+                            In the example code below, the fetch() function as a second argument—an object containing
+                            options for the fetch
+                            request specifying the method and the body.
+                        </p>
+
+                        <code class="center">
+fetch('https://api-to-call.com/endpoint', {
+  method: 'POST',
+  body: JSON.stringify({id: "200"})
+}).then(response => {
+  if(response.ok){
+	  return response.json();
+  }
+	throw new Error('Request failed!');
+}, networkError => {
+  console.log(networkError.message);
+}).then(jsonResponse => {
+  console.log(jsonResponse);
+})
+                        </code>
+                    </article>
+
+                    <article>
+                        <h3>HTTP POST Request</h3>
+
+                        <p>
+                            HTTP POST requests are made with the intention of sending new information to the source
+                            (server) that will receive
+                            it.
+                        </p>
+
+                        <p>
+                            For a POST request, the new information is stored in the body of the request.
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3>Using async…await with Fetch</h3>
+
+                        <p>
+                            The async…await syntax is used with the Fetch API to handle promises.
+                        </p>
+
+                        <p>
+                            In the example code, the async keyword is used to make the getSuggestions() function an
+                            async
+                            function. This means
+                            that the function will return a promise. The await keyword used before the fetch() call
+                            makes
+                            the code wait until
+                            the promise is resolved.
+                        </p>
+
+                        <code class="center">
+const getSuggestions = async () => {
+  const wordQuery = inputField.value;
+  const endpoint = `${url}${queryParams}${wordQuery}`;
+  try{
+const response = await fetch(endpoint, {cache: 'no-cache'});
+    if(response.ok){
+      const jsonResponse = await response.json()
+    }
+  }
+  catch(error){
+    console.log(error)
+  }
+}
+                        </code>
+                    </article>
+                </section>
+            </span>
+        </main>
+        <footer><span><a href="https://notabug.org/anton.puiu" target="_blank"><svg width="62px" height="62px"
+                        viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                        <style>
+                            .st0 {
+                                fill: #fff
+                            }
+                        </style>
+                        <g id="Icon">
+                            <circle id="Background" cx="512" cy="512" r="512" />
+                            <path class="st0"
+                                d="M560 256c.6-1.8 2.5-3.2 4.4-2.8 1.5.4 2.1 2 2.4 3.4 5.2 23.2 7 47.3 3.8 71-1.7-11.1-3.4-22.1-5-33.2-.6-7.8-2.5-15.5-3.6-23.2-5.4 21.1-12.1 42.2-23.9 60.7-1.2 2.1-2.9 3.9-3.3 6.3-3.5 42.9-7 85.8-10.5 128.8 8.9 4 16.1 11.3 19.7 20.4 27.8-29.3 54-60.3 76.1-94 50.8-9.7 96.9-33.8 144.4-53.1 13.6 13.2 26.9 26.8 39.2 41.2 3.9 4.9 8.3 9.5 10.7 15.4-17.2-16.1-34.2-32.6-51.4-48.8-32.6 12.9-61.7 33.3-94.4 46-11.6 4.6-23.7 7.9-35.9 10.4-2.3.7-5.3.5-6.7 2.9-6.4 8.7-12.3 17.8-19.3 26.1-18.6 26.3-39.5 50.8-58.6 76.7 0 .8 0 1.7.1 2.5 23.4-6.8 46.5-14.2 69.8-21.1 5.7-.6 11.5-.1 17.3-.4 3.3-.4 5.8 2.1 8.6 3.4 24.1 12.7 51 18.8 77.5 23.8 5.2 1.2 10.7 1.6 15.9 3.2 3.4 2.2 7.2 4.3 9.5 7.7 11.5 15.5 22.6 32.3 26 51.6-6.5-14.7-16.1-27.9-27.2-39.4-2.2-2.1-4.1-5-7.2-5.9-33-12.5-67.7-19.1-102.1-26.6-6.1-1.2-12.1-3.2-18.4-3.6-4.8 1.2-9.2 3.4-13.8 5.1-21.2 8-42.3 16.1-63.6 23.9-1.7.5-1.8 2.7-2.5 4.1 11.2 1 22.5 1.7 33.5 4 .9.3 2.5.3 2.5 1.7 3.4 15 10.7 28.8 18.6 41.9 6.3 10.6 13.5 20.6 20.1 31 2.1 3.5 4.4 7 5.2 11-.3.5-1 1.7-1.4 2.2 7.4 16.6 12 34.4 13.6 52.5.4 3.7.7 7.3 1.6 10.9-.5-.9-1.3-1.7-1.6-2.7l-.1-.8c-.3-4.4-1.8-8.7-2.7-13-3.6-13.2-7.5-26.6-14.9-38.2-.7-1.9-3.4-1-4.3-2.7-8.2-10.2-13-22.5-19-34-7.8-15.3-15-31-25.4-44.7-10-3.2-20-6.2-30-9.4-.6 1.3-1.1 2.6-1.6 3.9 4.1 1.6 8.3 2.9 12.4 4.4-4 19.6-6.9 39.3-10.6 58.9-2 9.7-3.7 19.5-7.1 28.9-1 2.5-2.1 5.4-4.9 6.4-6.5 16.8-13.8 33.3-21 49.8-8.7 19.7-17.5 39.3-27 58.7-2.4 4.7-4.6 9.5-7.7 13.8 14-40.3 31.6-79.3 45.8-119.6-2-6.1.2-12.5 1.7-18.4 7.4-24.6 18.3-48 26.1-72.5-3.7-1.5-7.3-3.2-11-4.4-6.7 8.3-10.8 18.4-18.1 26.2-4.3 4.8-8.8 9.7-14.3 13.2-9.5 6.6-19.9 11.9-30.4 17-10.6 4.7-22.1 8.4-33.8 7.9-9.4-.8-19.1-4.3-25-11.9-9.2-11.6-12.9-26.4-14.9-40.8-2.9-3.9-6.3-7.6-7.7-12.4-3.4-9.6-1.1-20.9 5.7-28.5 1.8-2.3 4.3-3.7 6.3-5.8 4.5-12.6 12.2-23.9 21.6-33.5-12.5-8.8-24.2-18.9-38.1-25.5-17.7 10.4-34.1 22.8-50.9 34.5-22.3 15.9-45.2 31.5-71.1 41.1-2.3.4-2.1 2.9-2.3 4.6-.7 18.3-2.4 36.6-3.3 54.9-.7 6.9-.3 14-1.9 20.8-.9 3.3-3.1 6-5.1 8.7-.4-16.8.7-33.7.9-50.5 1.2-19.7 1.5-39.5 4.7-59 15.2-5.3 30.3-11 44.8-18.2 27.8-13.2 52.9-31.3 77.5-49.6 6.4-.4 12.7 1.6 18.5 4.2 8.4 3.5 16 8.6 23.7 13.4 4.7 2.9 8.9 6.6 14 8.9 1.7-.8 2.9-2.3 4.3-3.5-13.1-11.8-27.2-22.5-39.4-35.3-2.7-2.5-4.9-5.5-7.7-7.8-16.7-12.6-33-25.9-51.4-36-2.5-1-5.2-.8-7.8-1.2-14.7-1.6-29.2-4.5-44-6-4.3-.3-8.4-1.5-12.7-1.3-4.2.1-8.3-1.6-11.1-4.8 12 .5 23.9 2.1 35.9 2.9 13.6 1.4 27.3 2 40.8 3.6 13 6.8 25.1 15.1 37.7 22.6 10.2 5.9 20.4 12.2 31.6 16 2.3.8 4.7 1.3 7.2 1.6 7.8 8.9 14.5 19 23.9 26.4 3.9 2.9 6.5 7.2 7.7 11.9 9.1-5.7 20.1-6.5 30.6-7-5.7-25.5-12.1-50.7-18.7-76-.7-2.3-2.6-3.8-3.9-5.7-13.1-17.2-21.4-37.5-30.6-56.9-5.8-7.7-11.5-15.6-16.2-24.1-1.2-2.3-2.6-4.6-2.7-7.2 8.1 8.4 17.5 15.4 25.7 23.6 2.7 2.6 4.4 6 6.3 9.1 8.5 14.3 15.6 29.3 24 43.6 1.4 2.6 3.3 4.9 4.3 7.7 8.7 29.1 19.7 57.5 29.4 86.3 5.6.5 11.1 1.3 16.6 2.4 5.8-42 10.6-84.2 16.8-126.1 1.6-5.2 4.9-9.8 7-14.8 10.3-21.7 17.5-44.2 26.8-65.8zM406.2 521.1c-4.8 1.1-9.3 3.5-12.9 6.9-9.4 8.6-11.3 24-4.2 34.5 7 11.4 22.9 16 34.9 9.9 11.7-5.4 18.2-19.6 14.5-32-3.5-13.6-18.6-22.7-32.3-19.3zm62 10c-4.8 1.1-9.3 3.5-12.9 6.9-9.4 8.6-11.2 23.9-4.2 34.5 7 11.4 22.9 16 34.9 9.9 11.7-5.4 18.2-19.6 14.5-32-3.5-13.5-18.6-22.7-32.3-19.3z" />
+                            <path class="st0"
+                                d="M424.4 531.9c6.2-2.5 13.2 4.1 11.2 10.4-1.4 6.3-10.2 8.6-14.5 3.8-4.5-4.1-2.6-12.5 3.3-14.2zm5.4 6.3c-1.9 1.1-1.5 4.2.6 4.9 2 .9 4.4-1.5 3.5-3.5-.5-1.6-2.6-2.4-4.1-1.4zm55.7 5.5c6.2-2.5 13.3 4 11.2 10.4-1.4 6.2-10.1 8.6-14.5 3.9-4.5-4.1-2.6-12.5 3.3-14.3zm5.3 6.4c-1.5 1-1.5 3.5 0 4.5 1.7 1.3 4.3-.2 4.3-2.3.1-2.1-2.5-3.6-4.3-2.2z" />
+                        </g>
+                    </svg>
+                </a>
+            </span>
+
+            <span>
+                <a href="mailto:anton.puiu@email.com" target="_blank">
+                    <img src="resources/img/mail.png" width="62px">
+                </a>
+            </span>
+
+            <span>
+                <a href="https://github.com/antonpuiu" target="_blank">
+                    <img src="resources/img/github.png" width="62px">
+                </a>
+            </span>
+        </footer>
+    </div>
+</body>
+
+</html>
